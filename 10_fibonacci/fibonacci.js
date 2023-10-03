@@ -6,8 +6,7 @@ const fibonacci = function(n) {
         n = +n;
     }
     // Iterative solution
-
-    // 1, 1, 2, 3,
+/*
     let prev1 = 1;
     let prev2 = 0;
     let sum = prev1 + prev2;
@@ -16,9 +15,13 @@ const fibonacci = function(n) {
         prev2 = prev1
         prev1 = sum
     }
-    return sum
+    return sum */
 
     // Recursive solution
+    if (n < 2) {
+        return n
+    }
+    return fibonacci(n -1) + fibonacci(n - 2)
 };
 
 // Do not edit below this line
