@@ -14,7 +14,5 @@ const findTheOldest = (people) => people.reduce((oldestPerson, person) => {
     return oldestPerson // otherwise keep the current oldestPerson
 }, people[0]);
 
-// (person.yearOfDeath - person.yearOfBirth)
-
 // Do not edit below this line
 module.exports = findTheOldest;
